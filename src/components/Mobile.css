@@ -1,0 +1,285 @@
+.investorText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 100px;
+  background: linear-gradient(263.24deg, #9130f4 21.05%, #4646f9 77.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.launch {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 29px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 100px;
+  color: #121139;
+}
+
+.intro {
+  background: #15123e;
+  border-radius: 30px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.mainMobileDiv {
+  position: relative;
+  z-index: -99;
+}
+.first {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  /* or 30px */
+  text-align: start;
+  text-transform: capitalize;
+  margin: 70px 0px;
+  color: #ffffff;
+}
+
+.introText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 29px */
+  text-align: start;
+  letter-spacing: 0.04em;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.interestedbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 67px;
+  gap: 10px;
+  border: 4px solid;
+  background: unset;
+  border-image-source: linear-gradient(94.28deg, #8f30f4 0%, #3a49f9 100%);
+  border-image-slice: 1;
+  color: #f4f4f4;
+  width: 287px;
+  height: 85px;
+  margin-left: 50px;
+}
+.mobile {
+  position: absolute;
+}
+.mobile .cover {
+  position: absolute;
+  left: 45%;
+  height: 500px;
+  top: 50px;
+  z-index: 22;
+}
+
+.mobile .screen {
+  position: absolute;
+  left: 46%;
+  z-index: 2;
+  height: 485px;
+  width: 246px;
+  top: 55px;
+} 
+
+.mobilePointsDiv1 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  left: 66%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  top: 100px;
+}
+
+.div1mobilepoints{
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+.mobilePointsDiv2 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  left: 66%;
+  top: 200px;
+  padding: 20px 40px;
+  border-radius: 30px;
+}
+
+
+.mobilePointsDiv3 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  left: 66%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  top: 300px;
+}
+
+.price {
+  background-color: #e7fbf5;
+  width: 150px;
+  height: 50px;
+  color: #55a858;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculationBox {
+  border: 4px solid #000000;
+  border-radius: 56px;
+}
+
+.invoicingText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  /* or 50px */
+
+  text-align: center;
+  text-transform: capitalize;
+
+  /* step gradient */
+
+  background: linear-gradient(236.93deg, #4945f8 2.87%, #9030f4 71.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.recharts-wrapper , .recharts-surface{
+  margin: auto;
+}
+.invoicingPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.MacPointsDiv1{
+    background: #1c1a50;
+    border-radius: 30px;
+    color: #ffffff;
+    position: absolute;
+    padding: 20px 40px;
+    border-radius: 30px; 
+    right: 0%;
+}
+.div1macpoints{
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 30px; 
+}
+.MacPointsDiv2{
+    background: #1c1a50;
+    border-radius: 30px;
+    color: #ffffff;
+    position: absolute;
+    padding: 20px 40px;
+    border-radius: 30px; 
+    left: 0%;
+    bottom: 200px;
+}
+.MacPointsDiv3{
+    background: #1c1a50;
+    border-radius: 30px;
+    color: #ffffff;
+    position: absolute;
+    padding: 20px 40px;
+    border-radius: 30px; 
+    right: 0%;
+    bottom: 150px;
+}
+.macImg{
+  height:500px;
+  width:600px;
+}
+
+.lightIcon{
+  width: 20px;
+  height: 10px;
+  background: #555df8;
+  border-radius: 35%;
+}
+
+.darkIcon{
+  width: 20px;
+  height: 10px;
+  background: #989dfa;
+  border-radius: 35%;
+}
+
+@media only screen and (max-width: 450px) {
+  .macImg{
+      height:300px;
+      width:300px;
+    }
+     .recharts-wrapper , .recharts-surface{
+      width: 250px!important;
+      height: 250px!important;
+    } 
+  .mobile , .cover{
+  height: 500px;
+  margin-left: 10%;
+  background-image: url("../../public//images/mobile.png");
+  background-size: contain;
+  }
+  .intro{
+    padding: 10px;
+  }
+  .interestedbtn {
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  }
+}
+
+@media only screen and (max-width: 330px){
+  .recharts-wrapper , .recharts-surface{
+    width: 200px!important;
+    height: 200px!important;
+  } 
+}
+@media only screen and (max-width: 300px){
+  .recharts-wrapper , .recharts-surface{
+    width: 150px!important;
+    height: 150px!important;
+  } 
+}

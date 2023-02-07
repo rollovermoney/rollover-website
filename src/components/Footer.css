@@ -1,0 +1,45 @@
+.footercontent ,.col p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    letter-spacing: 0.3px;
+    
+    color: #92989F;
+}
+
+.footercontent ,.col ul li{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 30px;
+/* or 250% */
+
+letter-spacing: 0.3px;
+
+color: #FFFFFF;
+}
+.footercontent ,.col ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footercontent{
+    border-bottom: 1px solid #71777D;
+}
+
+@media only screen and (max-width: 450px) {
+    .footercontent ,.col p{
+        font-size: 12px;
+    }
+    .footercontent ,.col ul li{
+        font-size: 10px;
+    }
+    .footercontent{
+        flex-wrap: wrap;
+    }
+}

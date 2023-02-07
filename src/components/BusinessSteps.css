@@ -1,0 +1,94 @@
+.businessHeading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 100%;
+text-align: center;
+text-transform: capitalize;
+
+background: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.stepsHeading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 4px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.stepspara{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 130%;
+/* or 29px */
+
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+}
+
+.stepsBox{
+background: #1C1A50;
+border: 2px solid;
+border-radius: 30px;
+/* border-image-source: linear-gradient(94.28deg, #812DE2 0%, #3A49F9 100%);
+border-image-slice: 1; */
+width: 200px;
+height: 172px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+margin: 20px;
+position: relative;
+}
+
+.stepsBox span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 1);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.stepsBox p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 72px;
+line-height: 130%;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+
+background: linear-gradient(236.93deg, #4945F8 2.87%, #9030F4 71.53%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+position: absolute;
+bottom: -75px;
+}
+
+@media only screen and (max-width: 450px){
+    .stepsBox{
+        margin: auto;
+        margin-bottom: 100px;
+    }
+}
