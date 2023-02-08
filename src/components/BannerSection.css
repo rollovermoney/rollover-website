@@ -178,12 +178,12 @@ color: #FFFFFF;
 }
 
 .bookbtn {
-  height: 90px;
-  width: 275px;
+  height: 80px;
+  width: 245px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 28px 67px;
+  padding: 18px 47px;
   gap: 10px;
   background: none;
   color: #ffffff;
@@ -206,6 +206,7 @@ color: #FFFFFF;
   font-weight: 600;
   font-size: 35px;
   line-height: 100%;
+  letter-spacing: 4px;
 
   text-align: center;
   letter-spacing: 4px;

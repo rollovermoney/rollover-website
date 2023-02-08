@@ -4,9 +4,9 @@ import "./Mobile.css";
 import RangeField from "./RangeField";
 
 const Mobile = () => {
-  const [price, setPrice] = useState(0);
-  const [returnRate, setReturnRate] = useState(0);
-  const [period, setPeriod] = useState(0);
+  const [price, setPrice] = useState(10000);
+  const [returnRate, setReturnRate] = useState(10);
+  const [period, setPeriod] = useState(5);
   const [estReturn,setEstReturn] = useState(0)
 
  useEffect(() => {
@@ -81,8 +81,8 @@ const Mobile = () => {
             <div className="col-md-6 mb-5">Monthly Investment</div>
             <div className="col-md-6 mb-5">
               <div className="price">
-                {`$${new Intl.NumberFormat("en-IN", {
-                  maximumSignificantDigits: 3,
+                {`₹${new Intl.NumberFormat("en-IN", {
+                  maximumSignificantDigits: 1,
                 }).format(price)}`}
               </div>
             </div>
@@ -91,7 +91,7 @@ const Mobile = () => {
                 price={price}
                 setPrice={setPrice}
                 min={1000}
-                max={50000}
+                max={100000}
               />
             </div>
           </div>
@@ -129,15 +129,32 @@ const Mobile = () => {
           <div className="row">
             <div className="col-md-6 my-4">Invested Amount</div>
             <div className="col-md-6 my-4">
-              <b>$30,00,000</b>
+              <b>
+              ₹
+                {new Intl.NumberFormat("en-IN", {
+                  maximumSignificantDigits: 1,
+                }).format(price * 12 * period)}
+              </b>
             </div>
             <div className="col-md-6 my-4">Est. returns</div>
             <div className="col-md-6 my-4">
-              <b>$2,808,476</b>
+              <b>
+              ₹
+                {new Intl.NumberFormat("en-IN", {
+                  maximumSignificantDigits: 1,
+                }).format(estReturn * 12 * period)}
+              </b>
             </div>
             <div className="col-md-6 my-4">Total value</div>
             <div className="col-md-6 my-4">
-              <b>$5,808,476</b>
+              <b>
+              ₹
+                {new Intl.NumberFormat("en-IN", {
+                  maximumSignificantDigits: 1,
+                }).format(
+                  price * 12 * period + estReturn * 12 * period
+                )}
+              </b>
             </div>
           </div>
         </div>

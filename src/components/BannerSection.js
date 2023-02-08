@@ -44,7 +44,7 @@ const BannerSection = () => {
             <div className="row">
               <button className="bookbtn mb-5 mb-sm-0 ">BOOK CONSULTATION</button>
               <div className="col creditText">
-                <span>Get Credit on the Go without collateral</span>
+                <span>Get Credit on the Go <br></br>without collateral</span>
               </div>
             </div>
           </div>
@@ -54,10 +54,10 @@ const BannerSection = () => {
         </div>
 
         <div className="row logolist pb-5">
-          <img className="col mb-3" width="236px" src="/images/Logo 2.svg"></img>
+          {/* <img className="col mb-3" width="236px" src="/images/Logo 2.svg"></img>
           <img className="col mb-3" width="100px" src="/images/Logo.svg"></img>
           <img className="col mb-3" width="120px" src="/images/Logo 4.svg"></img>
-          <img className="col mb-3" width="100px" src="/images/Logo 3.svg"></img>
+          <img className="col mb-3" width="100px" src="/images/Logo 3.svg"></img> */}
         </div>
       
        
