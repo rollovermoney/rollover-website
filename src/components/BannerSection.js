@@ -45,15 +45,8 @@ const BannerSection = () => {
               to take control of your finances and reach your full potential.
             </p>
             <div className="row">
-              <button className="bookbtn mb-5 mb-sm-0 " onClick={() => setShowPopup(true)}>BOOK CONSULTATION</button>
-              {/* {showPopup && (
-                <div className="popup">
-                  <div className="popup-inner">
-                    <WaitList />
-                    <button onClick={() => setShowPopup(false)} className="closepopup">Close</button>
-                  </div>
-                </div>
-              )} */}
+              <button className="bookbtn mb-5 mb-sm-0 " >BOOK CONSULTATION</button>
+              
               <div className="col creditText">
                 <span>Get Credit on the Go <br></br>without collateral</span>
               </div>

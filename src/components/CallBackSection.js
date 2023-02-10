@@ -1,7 +1,9 @@
-import React from "react";
+import {React,useState} from "react";
 import "./CallBack.css";
+import WaitList from "./waitlist";
 
 const CallBackSection = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <div className="container py-5">
       <div className="row">
@@ -25,7 +27,15 @@ const CallBackSection = () => {
         <div className="col-md-2"></div>
       
        <div className="d-flex justify-content-center py-5 mb-5">
-          <button className="btn callbtn">CALL ME BACK</button>
+          <button className="btn callbtn" onClick={() => setShowPopup(true)}>CALL ME BACK</button>
+          {showPopup && (
+                <div className="popup">
+                  <div className="popup-inner">
+                    <WaitList />
+                    <button onClick={() => setShowPopup(false)} className="closepopup">Close</button>
+                  </div>
+                </div>
+              )}
        </div>
 
       </div>

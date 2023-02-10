@@ -13,7 +13,7 @@ const Mobile = () => {
  setEstReturn(price*(returnRate/100))
  }, [price,returnRate,estReturn])
  
- const url2="https://api.whatsapp.com/send?phone=9140257102";
+ const url2="https://api.whatsapp.com/send?phone=9650830027";
 
   return (
     <div className="container-fluid">
@@ -40,7 +40,7 @@ const Mobile = () => {
        
 
           <button className="interestedbtn" >
-          <a href="https://api.whatsapp.com/send?phone=9140257102" target="_blank" style={{textDecoration:"none",color:"white"}}>I AM INTERESTED!</a>
+          <a href="https://api.whatsapp.com/send?phone=919650830027" target="_blank" style={{textDecoration:"none",color:"white"}}>I AM INTERESTED!</a>
              
              </button>
              
