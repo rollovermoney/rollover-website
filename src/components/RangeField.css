@@ -1,0 +1,28 @@
+.input-range__slider{
+    background: red;
+    color: red;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.5rem;
+    position: absolute;
+    top: -0.6rem;
+    transform: translateX(-50%);
+    width: 1.5rem;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.input-range__track{
+    color: red;
+    background-color: red;
+}
+.input-range__track--background{
+    background-color: red;
+}
+.input-range__label {
+    color: red;
+    background-color: red;
+    font-family: "Helvetica Neue", san-serif;
+    font-size: 0.8rem;
+    transform: translateZ(0);
+    white-space: nowrap; }

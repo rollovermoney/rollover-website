@@ -38,7 +38,7 @@
 }
 .mainMobileDiv {
   position: relative;
-  z-index: -99;
+  /* z-index: -99; */
 }
 .first {
   font-family: "Poppins";

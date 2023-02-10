@@ -1,6 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import "./BannerSection.css";
+import CustomForm from "./newsletter";
+import WaitList from "./waitlist";
 const BannerSection = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
       {/* <div class="container">
@@ -42,7 +45,15 @@ const BannerSection = () => {
               to take control of your finances and reach your full potential.
             </p>
             <div className="row">
-              <button className="bookbtn mb-5 mb-sm-0 ">BOOK CONSULTATION</button>
+              <button className="bookbtn mb-5 mb-sm-0 " onClick={() => setShowPopup(true)}>BOOK CONSULTATION</button>
+              {/* {showPopup && (
+                <div className="popup">
+                  <div className="popup-inner">
+                    <WaitList />
+                    <button onClick={() => setShowPopup(false)} className="closepopup">Close</button>
+                  </div>
+                </div>
+              )} */}
               <div className="col creditText">
                 <span>Get Credit on the Go <br></br>without collateral</span>
               </div>
@@ -59,8 +70,8 @@ const BannerSection = () => {
           <img className="col mb-3" width="120px" src="/images/Logo 4.svg"></img>
           <img className="col mb-3" width="100px" src="/images/Logo 3.svg"></img> */}
         </div>
-      
-       
+
+
       </div>
     </>
   );

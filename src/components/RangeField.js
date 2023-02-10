@@ -1,6 +1,7 @@
 import React  from 'react'
 import InputRange from 'react-input-range';
 import "react-input-range/lib/css/index.css";
+import "./RangeField.css"
 
 
 const RangeField = ({price,setPrice,min,max}) => {
@@ -14,6 +15,7 @@ const RangeField = ({price,setPrice,min,max}) => {
         minValue={min}
         value={price}
         onChange={value => setPrice(value)} 
+        
         />
     </>
   )

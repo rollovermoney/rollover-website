@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.css";
-
+import CustomForm from "./newsletter";
 const Footer = () => {
   return (
     <>
+    
       <div
         className="container-fluid pt-3 px-md-5"
         style={{ background: " #121139" }}
@@ -55,6 +56,7 @@ const Footer = () => {
                 <ul>
                   <li>Be ahead of your competitors by efficiently managing your working capital</li>
                 </ul>
+                <CustomForm />
               </div>
             </div>
           </div>

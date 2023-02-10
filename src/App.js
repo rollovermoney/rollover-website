@@ -11,6 +11,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <BannerSection />
+  
       <CallBackSection />
       <BusinessSteps />
       <Mobile />

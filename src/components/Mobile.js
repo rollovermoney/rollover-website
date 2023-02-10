@@ -13,7 +13,7 @@ const Mobile = () => {
  setEstReturn(price*(returnRate/100))
  }, [price,returnRate,estReturn])
  
-
+ const url2="https://api.whatsapp.com/send?phone=9140257102";
 
   return (
     <div className="container-fluid">
@@ -34,8 +34,22 @@ const Mobile = () => {
             Specially created invoice baskets and schemes to invest and get safe
             returns!
           </p>
-          <button className="interestedbtn">I AM INTERESTED!</button>
+
+          
+        
+       
+
+          <button className="interestedbtn" >
+          <a href="https://api.whatsapp.com/send?phone=9140257102" target="_blank" style={{textDecoration:"none",color:"white"}}>I AM INTERESTED!</a>
+             
+             </button>
+             
+             
+             
+             
+             
         </div>
+        
 
         <div className="mt-5 mt-sm-0 d-block justify-content-center d-md-none position-relative ">
         <img
@@ -74,7 +88,7 @@ const Mobile = () => {
           </div>
         </div>
       </div>
-
+      
       <div className="row py-5 my-5 mx-3   p-md-5 m-md-5  calculationBox">
         <div className="col-md-6">
           <div className="row">
@@ -101,7 +115,7 @@ const Mobile = () => {
             <div className="col-md-6 mb-5">
               <div className="price">{`${returnRate} %`}</div>
             </div>
-            <div className="col-12 mb-5">
+            <div className="col-12 mb-5" >
               <RangeField
                 price={returnRate}
                 setPrice={setReturnRate}
