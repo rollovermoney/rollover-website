@@ -23,7 +23,7 @@ const App = () => {
       <CallBackSection />
       <BusinessSteps />
       <Mobile />
-      <FAQ />
+      {/* <FAQ /> */}
       <Footer />
     </div> 
   );

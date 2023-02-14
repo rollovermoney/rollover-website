@@ -28,11 +28,10 @@ const Mobile = () => {
         <div className="col-md-6 intro text-start">
           <h6 className="first">FIRST IN INDIA!</h6>
           <p className="introText">
-            Invest in invoices just like SIP or REITs.{" "}
+            Invest and get upto 25% returns{" "}
           </p>
           <p className="introText">
-            Specially created invoice baskets and schemes to invest and get safe
-            returns!
+          Easy to understand investment deals and advisory support
           </p>
 
           
@@ -62,11 +61,9 @@ const Mobile = () => {
           get returns upto 25% p.a.
           </div>
           <div className="div1mobilepoints m-3">
-          diversify risks with invoice baskets
+          Invest just like mutual funds with 0%* commisions
           </div>
-          <div className="div1mobilepoints m-3">
-            Unique SIP to invest in small amounts
-          </div>
+          
           </div>
         </div>
 
@@ -81,15 +78,15 @@ const Mobile = () => {
           get returns upto 25% p.a.
           </div>
           <div className="mobilePointsDiv2">
-          diversify risks with invoice baskets
+          Invest just like mutual funds with 0%* commisions
           </div>
-          <div className="mobilePointsDiv3">
+          {/* <div className="mobilePointsDiv3">
             Unique SIP to invest in small amounts
-          </div>
+          </div> */}
         </div>
       </div>
       
-      <div className="row py-5 my-5 mx-3   p-md-5 m-md-5  calculationBox">
+      {/* <div className="row py-5 my-5 mx-3   p-md-5 m-md-5  calculationBox">
         <div className="col-md-6">
           <div className="row">
             <div className="col-md-6 mb-5">Monthly Investment</div>
@@ -185,7 +182,7 @@ const Mobile = () => {
           </div>
           <DonutChart price={price} estReturn={estReturn} />
         </div>
-      </div>
+      </div> */}
 
       <div className="row p-5" style={{ backgroundColor: "#15123E" }}>
         <div className="col-md-2"></div>
