@@ -58,6 +58,7 @@ const BannerSection = () => {
               </button>
               {/* <div></div> */}
               {/* <div></div> */}
+              {/* <div></div> */}
               <div className="col creditText">
                 <span>
                   Get Credit on the Go <br></br>without collateral
