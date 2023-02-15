@@ -56,7 +56,7 @@ const BannerSection = () => {
               <button className="bookbtn mb-5 mb-sm-0 " onClick={openlink}>
                 BOOK CONSULTATION
               </button>
-
+              {/* <div></div> */}
               <div className="col creditText">
                 <span>
                   Get Credit on the Go <br></br>without collateral
