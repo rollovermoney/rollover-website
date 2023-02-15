@@ -1,7 +1,7 @@
 .navbar-expand-lg {
- background-color: #121139;
- padding-bottom: 30px;
-} 
+  background-color: #121139;
+  padding-bottom: 30px;
+}
 
 /* .logo {
     margin-left: 30px;
@@ -39,3 +39,10 @@
     text-decoration: none;
     color: white;
 }  */
+
+@media only screen and (max-width: 450px) {
+  .logosvg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

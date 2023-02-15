@@ -4,6 +4,11 @@ import CustomForm from "./newsletter";
 import WaitList from "./waitlist";
 const BannerSection = () => {
   const [showPopup, setShowPopup] = useState(false);
+
+  const openlink = () => {
+    const url = "https://zeeg.me/rollover/30min";
+    window.open(url, "_blank");
+  };
   return (
     <>
       {/* <div class="container">
@@ -34,7 +39,10 @@ const BannerSection = () => {
         </div>
       </div> */}
 
-      <div className="container-fluid px-5" style={{ backgroundColor: "#121139" }}>
+      <div
+        className="container-fluid px-5"
+        style={{ backgroundColor: "#121139" }}
+      >
         <div className="row pt-5">
           <div className="col-md-8 order-2 order-md-1 ">
             <h1 className="headingtext1">Accelerate Cashflow</h1>
@@ -45,10 +53,14 @@ const BannerSection = () => {
               to take control of your finances and reach your full potential.
             </p>
             <div className="row">
-              <button className="bookbtn mb-5 mb-sm-0 " >BOOK CONSULTATION</button>
-              
+              <button className="bookbtn mb-5 mb-sm-0 " onClick={openlink}>
+                BOOK CONSULTATION
+              </button>
+
               <div className="col creditText">
-                <span>Get Credit on the Go <br></br>without collateral</span>
+                <span>
+                  Get Credit on the Go <br></br>without collateral
+                </span>
               </div>
             </div>
           </div>
@@ -63,8 +75,6 @@ const BannerSection = () => {
           <img className="col mb-3" width="120px" src="/images/Logo 4.svg"></img>
           <img className="col mb-3" width="100px" src="/images/Logo 3.svg"></img> */}
         </div>
-
-
       </div>
     </>
   );
