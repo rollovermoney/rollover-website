@@ -3,14 +3,20 @@ import "./Popup.css"
 
 
 const CustomFormNewsletter = ({ status, message, onValidated }) => {
-    let email,number;
+    let email,number,name,businessname;
     const submit = () =>
       email &&
       number &&
+      name &&
+      businessname &&
       email.value.indexOf("@") > -1 &&
       onValidated({
         EMAIL: email.value,
-        PHONE:number.value
+        PHONE:number.value,
+        NAME:name.value,
+        BUSINESSNAME:businessname.value
+
+
       });
   
     return (
@@ -31,6 +37,20 @@ const CustomFormNewsletter = ({ status, message, onValidated }) => {
           />
         )}
         <h1 style={{color:"white",fontSize:"38px",fontFamily:"Poppins-Bold",textAlign:"center",margin:"20px"}}>Join the waitlist</h1>
+        <input
+         className="waitlist-input"
+          ref={node => (name = node)}
+          type="text"
+          placeholder="Your Name"
+        />
+        <br></br>
+        <input
+         className="waitlist-input"
+          ref={node => (businessname = node)}
+          type="text"
+          placeholder="Business Name"
+        />
+        <br></br>
         <input
          className="waitlist-input"
           ref={node => (email = node)}
