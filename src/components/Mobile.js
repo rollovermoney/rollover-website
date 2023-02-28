@@ -7,13 +7,13 @@ const Mobile = () => {
   const [price, setPrice] = useState(10000);
   const [returnRate, setReturnRate] = useState(10);
   const [period, setPeriod] = useState(5);
-  const [estReturn,setEstReturn] = useState(0)
+  const [estReturn, setEstReturn] = useState(0);
 
- useEffect(() => {
- setEstReturn(price*(returnRate/100))
- }, [price,returnRate,estReturn])
- 
- const url2="https://api.whatsapp.com/send?phone=9650830027";
+  useEffect(() => {
+    setEstReturn(price * (returnRate / 100));
+  }, [price, returnRate, estReturn]);
+
+  const url2 = "https://api.whatsapp.com/send?phone=9650830027";
 
   return (
     <div className="container-fluid">
@@ -28,46 +28,40 @@ const Mobile = () => {
         <div className="col-md-6 intro text-start">
           <h6 className="first">FIRST IN INDIA!</h6>
           <p className="introText">
-            Invest and get upto 25% returns{" "}
+            Automate your account receivables <br></br> and payable seamlessly
+            and <br></br>achieve better cash flows and more<br></br> working
+            capital.{" "}
           </p>
-          <p className="introText">
-          Easy to understand investment deals and advisory support
-          </p>
-
-          
-        
-       
-
-          <button className="interestedbtn" >
-          <a href="https://api.whatsapp.com/send?phone=919650830027" target="_blank" style={{textDecoration:"none",color:"white"}}>I AM INTERESTED!</a>
-             
-             </button>
-             
-             
-             
-             
-             
+          <button className="interestedbtn">
+            <a
+              href="https://api.whatsapp.com/send?phone=919650830027"
+              target="_blank"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              I AM INTERESTED!
+            </a>
+          </button>
         </div>
-        
 
         <div className="mt-5 mt-sm-0 d-block justify-content-center d-md-none position-relative ">
-        <img
+          <img
             className="cover"
             src="/images/iPhone 13 Max - Midnight.png"
           ></img>
           <div>
-            
-          <div className="div1mobilepoints m-3">
-          get returns upto 25% p.a.
-          </div>
-          <div className="div1mobilepoints m-3">
-          Invest just like mutual funds with 0%* commisions
-          </div>
-          
+            <div className="div1mobilepoints m-3">
+              Instant credit for working capital
+            </div>
+            <div className="div1mobilepoints m-3">
+              Automate your account receivables and payables
+            </div>
+            <div className="div1mobilepoints m-3">
+              Earn rewards and cashback on timely repayments
+            </div>
           </div>
         </div>
 
-        <div className="mobile d-none d-md-flex">   
+        <div className="mobile d-none d-md-flex">
           <img
             className="cover"
             src="/images/iPhone 13 Max - Midnight.png"
@@ -75,17 +69,17 @@ const Mobile = () => {
           <img className="screen" src="/images/mobile.png"></img>
 
           <div className="mobilePointsDiv1">
-          get returns upto 25% p.a.
+            Instant credit for working capital
           </div>
           <div className="mobilePointsDiv2">
-          Invest just like mutual funds with 0%* commisions
+            Automate your account receivables and payables
           </div>
-          {/* <div className="mobilePointsDiv3">
-            Unique SIP to invest in small amounts
-          </div> */}
+          <div className="mobilePointsDiv3">
+            Earn rewards and cashback on timely repayments
+          </div>
         </div>
       </div>
-      
+
       {/* <div className="row py-5 my-5 mx-3   p-md-5 m-md-5  calculationBox">
         <div className="col-md-6">
           <div className="row">
@@ -198,29 +192,29 @@ const Mobile = () => {
               invoice using our invoicing software and get better discounting
               rates and faster approvals.
             </p>
-            <div className="my-5 position-relative" >
-            <img className="macImg"  src="/images/Mac Dashboard.png" ></img>
+            <div className="my-5 position-relative">
+              <img className="macImg" src="/images/Mac Dashboard.png"></img>
             </div>
-           
+
             <div className="d-flex d-sm-none div1macpoints my-3">
-            upto 50% less approval time
+              upto 50% less approval time
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-3">
-            better discounting rates 
+              better discounting rates
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-3">
-            earn commission on referral
+              earn commission on referral
             </div>
 
             <div className="MacPointsDiv1 d-none d-sm-flex">
-            upto 50% less approval time
-          </div>
-          <div className="MacPointsDiv2 d-none d-sm-flex">
-             better discounting rates 
-          </div>
-          <div className="MacPointsDiv3 d-none d-sm-flex">
-          earn commission on referral
-          </div>
+              upto 50% less approval time
+            </div>
+            <div className="MacPointsDiv2 d-none d-sm-flex">
+              better discounting rates
+            </div>
+            <div className="MacPointsDiv3 d-none d-sm-flex">
+              earn commission on referral
+            </div>
           </div>
         </div>
         <div className="col-md-2"></div>

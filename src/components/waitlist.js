@@ -1,6 +1,5 @@
-import MailchimpSubscribe from "react-mailchimp-subscribe"
-import "./Popup.css"
-
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import "./Popup.css";
 
 const CustomFormNewsletter = ({ status, message, onValidated }) => {
     let email,number,name,businessname;
@@ -71,24 +70,27 @@ const CustomFormNewsletter = ({ status, message, onValidated }) => {
         </button>
       </div>
     );
-  };
-  
+ 
+
+ 
+};
+
 const WaitList = () => {
-      const url =
-        "https://app.us20.list-manage.com/subscribe/post?u=b3da267118ca3ca4df4e1cac1&amp;id=5c586c2cbc&amp;f_id=00ed0debf0";
-      return (
-        <div>
-          <MailchimpSubscribe
-            url={url}
-            render={({ subscribe, status, message }) => (
-              <CustomFormNewsletter
-                status={status}
-                message={message}
-                onValidated={formData => subscribe(formData)}
-              />
-            )}
+  const url =
+    "https://app.us20.list-manage.com/subscribe/post?u=b3da267118ca3ca4df4e1cac1&amp;id=5c586c2cbc&amp;f_id=00ed0debf0";
+  return (
+    <div>
+      <MailchimpSubscribe
+        url={url}
+        render={({ subscribe, status, message }) => (
+          <CustomFormNewsletter
+            status={status}
+            message={message}
+            onValidated={(formData) => subscribe(formData)}
           />
-        </div>
-      );
-    }
+        )}
+      />
+    </div>
+  );
+};
 export default WaitList;
