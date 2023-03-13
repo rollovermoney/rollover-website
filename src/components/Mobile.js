@@ -19,8 +19,8 @@ const Mobile = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12">
-          <h3 className="investorText">For Investors</h3>
-          <p className="launch">Mobile App Launching Soon!</p>
+          <h3 className="investorText"></h3>
+          {/* <p className="launch">Mobile App Launching Soon!</p> */}
         </div>
       </div>
 
