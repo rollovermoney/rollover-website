@@ -54,13 +54,13 @@ const Footer = () => {
             <h2 class="footer-menu-name"> Legal</h2>
             <ul id="menu-legal" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/privacy-policy" target="_blank">Privacy Policy</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/terms-condition">Terms & Conditions</a>
+                <a href="/terms-condition" target="_blank">Terms & Conditions</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/cancellation-policy">Cancellation policy</a>
+                <a href="/cancellation-policy" target="_blank">Cancellation policy</a>
               </li>
             </ul>
           </div>
