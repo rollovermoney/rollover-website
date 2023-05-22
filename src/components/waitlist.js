@@ -1,78 +1,100 @@
+import React from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import "./Popup.css";
 
 const CustomFormNewsletter = ({ status, message, onValidated }) => {
-    let email,number,name,businessname;
-    const submit = () =>
-      email &&
-      number &&
-      name &&
-      businessname &&
-      email.value.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email.value,
-        PHONE:number.value,
-        NAME:name.value,
-        BUSINESSNAME:businessname.value
+  let email, number, name, businessname, businessType, annualRevenue;
 
+  const submit = () =>
+    email &&
+    number &&
+    name &&
+    businessname &&
+    businessType &&
+    annualRevenue &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value,
+      PHONE: number.value,
+      NAME: name.value,
+      BUSINESSNAME: businessname.value,
+      BUSINESSTYPE: businessType.value,
+      ANNUALREVENUE: annualRevenue.value,
+    });
 
-      });
-  
-    return (
-      <div
-        
+  return (
+    <div>
+      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+      {status === "error" && (
+        <div
+          style={{ color: "red" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === "success" && (
+        <div
+          style={{ color: "green", textAlign: "center" }}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      <h1
+        style={{
+          color: "black",
+          fontSize: "38px",
+          fontFamily: "Poppins-Bold",
+          textAlign: "center",
+          margin: "20px",
+        }}
       >
-        {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-        {status === "error" && (
-          <div
-            style={{ color: "red" }}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        {status === "success" && (
-          <div
-            style={{ color: "green",textAlign:"center" }}
-            dangerouslySetInnerHTML={{ __html: message }}
-          />
-        )}
-        <h1 style={{color:"white",fontSize:"38px",fontFamily:"Poppins-Bold",textAlign:"center",margin:"20px"}}>Join the waitlist</h1>
-        <input
-         className="waitlist-input"
-          ref={node => (name = node)}
-          type="text"
-          placeholder="Your Name"
-        />
-        <br></br>
-        <input
-         className="waitlist-input"
-          ref={node => (businessname = node)}
-          type="text"
-          placeholder="Business Name"
-        />
-        <br></br>
-        <input
-         className="waitlist-input"
-          ref={node => (email = node)}
-          type="email"
-          placeholder="Your email"
-        />
-        <br></br>
-        <input
-         className="waitlist-input"
-          ref={node => (number = node)}
-          type="text"
-          placeholder="Your number"
-        />
-        <br></br>
-        
-        <button className="waitlist-btn" onClick={submit}>
-          Join Now
-        </button>
-      </div>
-    );
- 
+        Join the waitlist
+      </h1>
+      <input
+        className="waitlist-input"
+        ref={(node) => (name = node)}
+        type="text"
+        placeholder="Your Name"
+      />
+      <br></br>
+      <input
+        className="waitlist-input"
+        ref={(node) => (businessname = node)}
+        type="text"
+        placeholder="Business Name"
+      />
+      <br></br>
+      <input
+        className="waitlist-input"
+        ref={(node) => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <br></br>
+      <input
+        className="waitlist-input"
+        ref={(node) => (number = node)}
+        type="text"
+        placeholder="Your number"
+      />
+      <br></br>
+      <select className="waitlist-input" ref={(node) => (businessType = node)}>
+        <option value="">Select Business Type</option>
+        <option value="Manufacturing">Manufacturing</option>
+        <option value="Service">Service</option>
+      </select>
+      <br></br>
+      <input
+        className="waitlist-input"
+        ref={(node) => (annualRevenue = node)}
+        type="text"
+        placeholder="Annual Revenue"
+      />
+      <br></br>
 
- 
+      <button className="waitlist-btn" onClick={submit}>
+        Join Now
+      </button>
+    </div>
+  );
 };
 
 const WaitList = () => {
@@ -93,4 +115,5 @@ const WaitList = () => {
     </div>
   );
 };
+
 export default WaitList;

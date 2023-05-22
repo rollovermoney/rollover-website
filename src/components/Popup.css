@@ -4,89 +4,78 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(8px);
 }
 
 .popup-inner {
   width: 80%;
+  max-width: 500px;
   height: 90%;
-  background: #1C1A50;
+  background: #f1f1f5;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
 }
 
 .waitlist-input {
-  width: 300px;
-  border: 1px solid #cecece;
+  width: 100%;
+  border: none;
   border-radius: 8px;
-  display: flex;
   margin-top: 16px;
-  padding: 16px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 12px 16px;
+  background-color: #1c1a50;
+  color: white;
+  font-family: Poppins-Bold;
+  font-size: 14px;
+  outline: none;
+}
+
+.waitlist-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .waitlist-btn {
-  width: 300px;
-
+  width: 100%;
+  border: none;
   border-radius: 8px;
-  display: flex;
-  background-color: #1C1A50;
+  background-color: #d06c08;
   color: white;
   font-family: Poppins-Bold;
-  margin-top: -10px;
-  padding: 16px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 14px;
+  margin-top: 16px;
+  padding: 12px 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.waitlist-btn:hover {
+  background-color: #d8961c;
 }
 
 .closepopup {
-  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
   border: none;
-  color: #000;
-  font-family: Poppins-light;
+  color: rgb(1, 1, 1);
+  font-family: Poppins-Bold;
   font-size: 14px;
-  margin-top: 50px;
-  display: flex;
+  cursor: pointer;
   outline: none;
-  text-decoration: underline;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.closepopup:hover {
+  color: #5b5242;
 }
 
 @media screen and (max-width: 768px) {
   .popup-inner {
-    width: 100%;
-    height: 100%;
-
+    width: 90%;
+    height: 80%;
   }
-
-  .waitlist-input {
-    width: 100%;
-    margin-top: 20px;
-
-  }
-
-  .waitlist-btn {
-    width: 100%;
-    margin-top: 20px;
-
-
-  }
-
-  .closepopup {
-    margin-top: 20px;
-
-
-  }
-
-
-
-
 }

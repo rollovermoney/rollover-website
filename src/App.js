@@ -36,9 +36,10 @@ const Home = () => {
   return (
     <>
       <BannerSection />
+       <CallBackSection />
       <BusinessSteps />
       <Mobile />
-      <CallBackSection />
+     
      
     </>
   );

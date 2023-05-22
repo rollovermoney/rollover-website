@@ -28,7 +28,7 @@ const Mobile = () => {
         </div>
       </div>
 
-      <div className="row mx-md-5 mainMobileDiv mb-5">
+      {/* <div className="row mx-md-5 mainMobileDiv mb-5">
         <div className="col-md-6 intro text-start">
           <h6 className="first">FIRST IN INDIA!</h6>
           <p className="introText">
@@ -82,7 +82,7 @@ const Mobile = () => {
             Earn rewards and cashback on timely repayments
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="row py-5 my-5 mx-3   p-md-5 m-md-5  calculationBox">
         <div className="col-md-6">
@@ -182,12 +182,12 @@ const Mobile = () => {
         </div>
       </div> */}
 
-      <div className="row p-5" style={{ backgroundColor: "#15123E" }}>
+      <div className="row p-0" style={{ backgroundColor: "white" }}>
         <div className="col-md-2"></div>
         <div className="col-md-8 position-relative">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <h6 className="invoicingText my-5">
-              Invoicing
+            Sales & Invoicing 
               <br />
               Dashboard
             </h6>
@@ -197,7 +197,7 @@ const Mobile = () => {
               rates and faster approvals.
             </p>
             <div className="my-5 position-relative">
-              <img className="macImg" src="/images/Mac Dashboard.png"></img>
+              <img className="macImg" src="/images/macdash.jpeg"></img>
             </div>
 
             <div className="d-flex d-sm-none div1macpoints my-3">
