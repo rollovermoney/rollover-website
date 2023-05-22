@@ -14,6 +14,10 @@ const Mobile = () => {
   }, [price, returnRate, estReturn]);
 
   const url2 = "https://api.whatsapp.com/send?phone=9650830027";
+  const openlink = () => {
+    const url = "https://zeeg.me/rollover/30min";
+    window.open(url, "_blank");
+  };
 
   return (
     <div className="container-fluid">
@@ -34,7 +38,7 @@ const Mobile = () => {
           </p>
           <button className="interestedbtn">
             <a
-              href="https://api.whatsapp.com/send?phone=919650830027"
+              onClick={openlink}
               target="_blank"
               style={{ textDecoration: "none", color: "white" }}
             >
