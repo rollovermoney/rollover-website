@@ -40,7 +40,7 @@ color: #FFFFFF;
 .stepsBox{
 background: #1C1A50;
 border: 2px solid;
-border-radius: 50px;
+/* border-radius: 50px; */
 
 border-image-source: linear-gradient(94.28deg, #812DE2 0%, #3A49F9 100%);
 border-image-slice: 1;
