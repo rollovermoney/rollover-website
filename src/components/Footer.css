@@ -7,7 +7,9 @@
   line-height: 20px;
   letter-spacing: 0.3px;
   color: #92989f;
+  padding: 10px;
 }
+
 
 .footercontent,
 .col ul li {
@@ -18,12 +20,14 @@
   line-height: 30px;
   letter-spacing: 0.3px;
   color: #fff;
+  padding: 10px;
 }
 
 .footercontent,
 .col ul {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; */
+  padding-left: 118px;
 }
 
 .footercontent {
@@ -34,10 +38,11 @@
   .footercontent,
   .col p {
     font-size: 12px;
+    padding-left: 0;
   }
   .footercontent,
   .col ul li {
-    font-size: 10px;
+    font-size: 12px;
   }
   .footercontent {
     display: flex;

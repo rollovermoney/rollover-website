@@ -199,13 +199,13 @@ const Mobile = () => {
               <img className="macImg" src="/images/macdash.jpeg"></img>
             </div>
 
-            <div className="d-flex d-sm-none div1macpoints my-3">
+            <div className="d-flex d-sm-none div1macpoints my-0">
               upto 50% less approval time
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-0">
             better discounting rates on invoices
             </div>
-            <div className="d-flex d-sm-none div1macpoints mb-3">
+            <div className="d-flex d-sm-none div1macpoints mb-4">
               earn commission on referral
             </div>
 

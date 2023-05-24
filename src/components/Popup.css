@@ -61,7 +61,7 @@
 .closepopup {
   position: absolute;
   top: 560px;
-  left: 220px;
+  left: 230px;
   background-color: transparent;
   border: none;
   color: rgb(236, 12, 12);
@@ -83,20 +83,11 @@
 
   .closepopup {
     top: 550px;
-    margin-left: -80px;
+    margin-left: -160px;
   }
 }
 
-@media only screen and (min-device-width: 390px) and (max-device-height: 896px) {
-  .popup-inner {
-    width: 90%;
-    height: 88vh;
-  }
-  .closepopup {
-    top: 550px;
-    margin-left: -80px;
-  }
-}
+
 
 
 
