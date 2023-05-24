@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="col-sm-1"></div>
           <div className="col-sm-10 p-sm-5">
             <div className="d-flex footercontent">
-              <div className="col">
+              {/* <div className="col">
                 <p>Services</p>
                 <ul>
                   <li>Invoice Discounting</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                   <li>Invoicing SaaS Platform</li>
                   <li>Pay Later (coming soon)</li>
                 </ul>
-              </div>
+              </div> */}
               <div className="col">
                 <p>Support</p>
                 <ul>

@@ -39,15 +39,20 @@ const CustomFormNewsletter = ({ status, message, onValidated }) => {
       )}
       <h1
         style={{
-          color: "black",
+          color: "white",
           fontSize: "38px",
           fontFamily: "Poppins-Bold",
           textAlign: "center",
-          margin: "20px",
+          marginTop: "-10px",
         }}
       >
         Join the waitlist
       </h1>
+      <div className="signup-counter">
+        <h1 className="signup-counter-number">1.2K</h1>
+        <p className="signup-counter-text">people have already signed up</p>
+      </div>
+
       <input
         className="waitlist-input"
         ref={(node) => (name = node)}
