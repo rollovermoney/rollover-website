@@ -9,11 +9,13 @@ const CallBackSection = () => {
     <div className="container py-5">
       <div className="row">
         <div className="col-md-12">
-          <h5 className="section2Heading py-2">Looking for instant Credit?</h5>
+          <h5 className="section2Heading py-2" data-aos="fade-left"
+              data-aos-offset="300">Looking for instant Credit?</h5>
         </div>
         <div className="col-md-2"></div>
         <div className="col-md-8">
-          <p className="section2Para">
+          <p className="section2Para" data-aos="fade-left"
+              data-aos-offset="300">
             Our team is dedicated to providing personalized support and guidance
             every step of the way. With flexible repayment terms and competitive
             interest rates, you can rest assured that you're getting the best
@@ -23,7 +25,7 @@ const CallBackSection = () => {
         <div className="col-md-2"></div>
 
         <div className="d-flex justify-content-center py-5 mb-5">
-          <button className="btn callbtn" onClick={() => setShowPopup(true)}>
+          <button className="btn callbtn" onClick={() => setShowPopup(true)} data-aos="zoom-in">
             Reach out to us
           </button>
           {showPopup && (
@@ -42,7 +44,7 @@ const CallBackSection = () => {
         </div>
 
         <div className="d-flex justify-content-center">
-          <button className="btn comingSoonBtn" >
+          <button className="btn comingSoonBtn" data-aos="zoom-out">
            
           </button>
         </div>

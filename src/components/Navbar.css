@@ -40,9 +40,14 @@
     color: white;
 }  */
 
+.logosvg {
+  margin-left: 10px;
+  margin-right: auto;
+}
 @media only screen and (max-width: 450px) {
   .logosvg {
-    margin-left: auto;
+    margin-left: 60px;
     margin-right: auto;
+    margin-top: 10px;
   }
 }

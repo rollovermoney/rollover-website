@@ -1,7 +1,5 @@
 import { React, useState } from "react";
 import "./BannerSection.css";
-import CustomForm from "./newsletter";
-import WaitList from "./waitlist";
 const BannerSection = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -11,33 +9,6 @@ const BannerSection = () => {
   };
   return (
     <>
-      {/* <div class="container">
-        <div style={{ marginTop: "-220px", marginLeft: "-100px" }}>
-          <div className="content">
-            Accelerate Cashflow
-            <div className='content-simplify'>
-              Simplify Financing</div>
-          </div>
-        </div>
-        <div class="landingimage">
-          <img src={img1} />
-        </div>
-        <div className='content-landing'>
-          start unlocking the value of your invoices.
-          Get the cash you need,<br></br> when you need  it,and invest in your business's future.
-          It's time to   <br></br>take control of your finances and reach your full potential.
-        </div>
-      </div>
-
-      <div className='container'>
-        <button className="btn">
-          book consultation
-
-        </button>
-        <div className='getcredit'>
-        Get Credit on the Go
-        </div>
-      </div> */}
 
       <div
         className="container-fluid px-5"

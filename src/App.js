@@ -12,6 +12,7 @@ import CancellationPolicyPage from './components/Cancellationpolicy';
 import ContactUsPage from './components/Contactus';
 
 const App = () => {
+  
   return (
     <Router>
       <div className="App">
@@ -39,9 +40,7 @@ const Home = () => {
       <BannerSection />
       <Mobile />
       <BusinessSteps />
-     
       <CallBackSection />
-     
     </>
   );
 };
