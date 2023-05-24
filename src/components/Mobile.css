@@ -100,7 +100,7 @@
   height: 485px;
   width: 246px;
   top: 55px;
-} 
+}
 
 .mobilePointsDiv1 {
   background: #1c1a50;
@@ -113,7 +113,7 @@
   top: 100px;
 }
 
-.div1mobilepoints{
+.div1mobilepoints {
   background: #1c1a50;
   border-radius: 30px;
   color: #ffffff;
@@ -130,7 +130,6 @@
   padding: 20px 40px;
   border-radius: 30px;
 }
-
 
 .mobilePointsDiv3 {
   background: #1c1a50;
@@ -178,7 +177,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.recharts-wrapper , .recharts-surface{
+.recharts-wrapper,
+.recharts-surface {
   margin: auto;
 }
 .invoicingPara {
@@ -189,58 +189,66 @@
   line-height: 130%;
   text-align: center;
   letter-spacing: 0.04em;
-  
+
   color: #1c1a50;
 }
-.MacPointsDiv1{
-    background: #1c1a50;
-    border-radius: 30px;
-    color: #ffffff;
-    position: absolute;
-    padding: 20px 40px;
-    border-radius: 30px; 
-    right: 0%;
+.MacPointsDiv1 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  padding: 20px 40px;
+  border-radius: 30px;
+  right: 0%;
+  margin-top: -100px;
+  margin-right: -60px;
+  
 }
-.div1macpoints{
+.div1macpoints {
   background: #1c1a50;
   border-radius: 30px;
   color: #ffffff;
   padding: 20px 40px;
-  border-radius: 30px; 
+  border-radius: 30px;
+  margin-top: 10px;
 }
-.MacPointsDiv2{
-    background: #1c1a50;
-    border-radius: 30px;
-    color: #ffffff;
-    position: absolute;
-    padding: 20px 40px;
-    border-radius: 30px; 
-    left: 0%;
-    bottom: 200px;
+.MacPointsDiv2 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  padding: 20px 30px;
+  border-radius: 30px;
+  left: 0%;
+ margin-top: -100px;
+ margin-left: -100px;
+  
 }
-.MacPointsDiv3{
-    background: #1c1a50;
-    border-radius: 30px;
-    color: #ffffff;
-    position: absolute;
-    padding: 20px 40px;
-    border-radius: 30px; 
-    right: 0%;
-    bottom: 150px;
+.MacPointsDiv3 {
+  background: #1c1a50;
+  border-radius: 30px;
+  color: #ffffff;
+  position: absolute;
+  padding: 20px 40px;
+  border-radius: 30px;
+  right: 0%;
+  bottom: 150px;
+  margin-top: -100px;
+  margin-right: -60px;
 }
-.macImg{
-  height:500px;
-  width:600px;
+.macImg {
+  height: 500px;
+  width: 600px;
 }
 
-.lightIcon{
+.lightIcon {
   width: 20px;
   height: 10px;
   background: #555df8;
   border-radius: 35%;
 }
 
-.darkIcon{
+.darkIcon {
   width: 20px;
   height: 10px;
   background: #989dfa;
@@ -248,41 +256,74 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .macImg{
-      height:300px;
-      width:300px;
-    }
-     .recharts-wrapper , .recharts-surface{
-      width: 250px!important;
-      height: 250px!important;
-    } 
-  .mobile , .cover{
-  height: 500px;
-  margin-left: 10%;
-  background-image: url("../../public//images/mobile.png");
-  background-size: contain;
+  .macImg {
+    height: 300px;
+    width: 300px;
   }
-  .intro{
+  .recharts-wrapper,
+  .recharts-surface {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .mobile,
+  .cover {
+    height: 500px;
+    margin-left: 10%;
+    background-image: url("../../public//images/mobile.png");
+    background-size: contain;
+  }
+  .intro {
     padding: 10px;
   }
   .interestedbtn {
-  width: 200px;
-  height: 50px;
-  margin: auto;
-  margin-top: -5px;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    margin-top: -5px;
     margin-left: 0px;
   }
 }
 
-@media only screen and (max-width: 330px){
-  .recharts-wrapper , .recharts-surface{
-    width: 200px!important;
-    height: 200px!important;
-  } 
+@media only screen and (max-width: 330px) {
+  .recharts-wrapper,
+  .recharts-surface {
+    width: 200px !important;
+    height: 200px !important;
+  }
 }
-@media only screen and (max-width: 300px){
-  .recharts-wrapper , .recharts-surface{
-    width: 150px!important;
-    height: 150px!important;
-  } 
+@media only screen and (max-width: 300px) {
+  .recharts-wrapper,
+  .recharts-surface {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+
+.lsoon {
+  font-size: 24px;
+  color: #FF4081;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.lsoon:before,
+.lsoon:after {
+ 
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: #FF4081;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.lsoon:before {
+  margin-right: 20px;
+}
+
+.lsoon:after {
+  margin-left: 20px;
 }

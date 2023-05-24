@@ -3,7 +3,7 @@ import "./BusinessSteps.css";
 
 const BusinessSteps = () => {
   return (
-    <div className="container-fluid py-5" style={{ background: "#121139" }}>
+    <div className="container-fluid py-5" style={{ background: "#121139" ,}}>
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-6">
@@ -21,7 +21,7 @@ const BusinessSteps = () => {
             <div className="col-md-12 d-flex flex-wrap flex-sm-nowrap" >
               <div className="stepsBox">
                 <img height="50px" src="/images/upload.png" ></img>
-                <span>Upload Invoice</span>
+                <span>Integrate ERP & Upload Invoice</span>
                 <p>1</p>
               </div>
               <div className="stepsBox">

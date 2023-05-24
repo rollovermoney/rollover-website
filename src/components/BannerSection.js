@@ -57,11 +57,7 @@ const BannerSection = () => {
               Get on a call
               </button>
              
-              <div className="col creditText">
-                <span>
-                  Get Credit on the Go <br></br>without collateral
-                </span>
-              </div>
+             
             </div>
           </div>
           <div className="col-md-4 p-3 order-1 order-md-2">

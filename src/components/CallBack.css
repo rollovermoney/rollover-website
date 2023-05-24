@@ -41,3 +41,39 @@ line-height: 100%;
 text-align: center;
 text-transform: uppercase;
 }
+
+.comingSoonBtn {
+  background-color: #d8961c;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: not-allowed;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.comingSoonBtn:hover {
+  background-color: #D5006B;
+  transform: scale(1.05);
+}
+
+.comingSoonBtn:active {
+  background-color: #FF4081;
+  transform: scale(0.95);
+}
+
+.comingSoonBtn:focus {
+  outline: none;
+}
+
+.comingSoonBtn:before {
+  content: "🚧";
+  margin-right: 5px;
+}
+
+.comingSoonBtn:after {
+  content: "Coming Soon!";
+  font-weight: bold;
+}

@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import PrivacyPolicyPage from './components/Privacypolicy';
 import TermsConditionsPage from "./components/TNC"
 import CancellationPolicyPage from './components/Cancellationpolicy';
+import ContactUsPage from './components/Contactus';
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-condition" element={<TermsConditionsPage />} />
           <Route path="/cancellation-policy" element={<CancellationPolicyPage />} />
-          
+          <Route path="/contact-us" element={<ContactUsPage />} />
         </Routes>
         <Footer />
       </div>
@@ -36,10 +37,10 @@ const Home = () => {
   return (
     <>
       <BannerSection />
-       <CallBackSection />
-      <BusinessSteps />
       <Mobile />
+      <BusinessSteps />
      
+      <CallBackSection />
      
     </>
   );

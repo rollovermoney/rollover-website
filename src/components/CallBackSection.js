@@ -1,14 +1,15 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import "./CallBack.css";
 import WaitList from "./waitlist";
 
 const CallBackSection = () => {
   const [showPopup, setShowPopup] = useState(false);
+
   return (
     <div className="container py-5">
       <div className="row">
         <div className="col-md-12">
-          <h5 className="section2Heading py-2">looking for instant Credit ?</h5>
+          <h5 className="section2Heading py-2">Looking for instant Credit?</h5>
         </div>
         <div className="col-md-2"></div>
         <div className="col-md-8">
@@ -38,6 +39,12 @@ const CallBackSection = () => {
               </div>
             </div>
           )}
+        </div>
+
+        <div className="d-flex justify-content-center">
+          <button className="btn comingSoonBtn" >
+           
+          </button>
         </div>
       </div>
     </div>
