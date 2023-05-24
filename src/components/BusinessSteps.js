@@ -16,6 +16,7 @@ const BusinessSteps = () => {
               A 3 step easy process once you are onboarded to help you get
               access to easy credit to fund your working capital needs.
             </p>
+            <h5 className="lsoon">LAUNCHING SOON</h5>
           </div>
       
             <div className="col-md-12 d-flex flex-wrap flex-sm-nowrap" >
@@ -35,12 +36,16 @@ const BusinessSteps = () => {
                 <p>3</p>
               </div>
             </div>
- 
+           
 
         </div>
+        
         <div className="col-md-3"></div>
+       
       </div>
+     
     </div>
+    
   );
 };
 

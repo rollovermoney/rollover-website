@@ -48,16 +48,14 @@ const BannerSection = () => {
             <h1 className="headingtext1">Accelerate Cashflow</h1>
             <h1 className="headingtext2 mb-5">Simplify Financing</h1>
             <p className="description mb-5">
-              start unlocking the value of your invoices. Get the cash you need,
-              when you need it, and invest in your business's future. It's time
-              to take control of your finances and reach your full potential.
+              with our finance analytics dashboard, catch hold the weakness of your businesses, manage finances, track, analyse and improve cashflows for better liquidity.
             </p>
             <div className="row">
               <button className="bookbtn mb-5 mb-sm-0 " onClick={openlink}>
-              Get on a call
+                Get on a call
               </button>
-             
-             
+
+
             </div>
           </div>
           <div className="col-md-4 p-3 order-1 order-md-2">

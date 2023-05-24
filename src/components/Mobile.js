@@ -194,7 +194,7 @@ const Mobile = () => {
               invoice using our invoicing software and get better discounting
               rates and faster approvals.
             </p>
-            <h5 className="lsoon">LAUNCHING SOON</h5>
+           
             <div className="my-5 position-relative">
               <img className="macImg" src="/images/macdash.jpeg"></img>
             </div>

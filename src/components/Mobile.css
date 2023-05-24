@@ -163,7 +163,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 100%;
   /* or 50px */
 
@@ -185,7 +185,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 130%;
   text-align: center;
   letter-spacing: 0.04em;
@@ -300,30 +300,3 @@
 }
 
 
-.lsoon {
-  font-size: 24px;
-  color: #FF4081;
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.lsoon:before,
-.lsoon:after {
- 
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  background-color: #FF4081;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-
-.lsoon:before {
-  margin-right: 20px;
-}
-
-.lsoon:after {
-  margin-left: 20px;
-}
