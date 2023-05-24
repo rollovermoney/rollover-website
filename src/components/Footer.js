@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="row" style={{marginLeft:"0px"}}>
           <div className="col-md-3 col-sm-6" >
             <div className="footercontent">
-              <p style={{fontWeight:"500",marginLeft:"20px"}}>Services</p>
+              <p style={{fontWeight:"500",marginLeft:"20px",color:"white"}}>Services</p>
               <ul>
                 <li style={{fontSize:"14px"}}>Invoice Discounting</li>
                 <li style={{fontSize:"14px"}}>Receivable Discounting</li>
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="footercontent">
-              <p style={{fontWeight:"500",marginLeft:"20px"}}>Support</p>
+              <p style={{fontWeight:"500",marginLeft:"20px",color:"white"}}>Support</p>
               <ul>
                 <li style={{fontSize:"14px"}}>Pricing Plan</li>
                 <li style={{fontSize:"14px"}}>Documentation</li>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="footercontent">
-              <p style={{fontWeight:"500",marginLeft:"20px"}}>Company</p>
+              <p style={{fontWeight:"500",marginLeft:"20px",color:"white"}}>Company</p>
               <ul>
                 <li><a href="/contact-us" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white",fontSize:"14px" }}>Contact Us</a></li>
                 <li style={{fontSize:"14px"}}>About</li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="footercontent">
-              <p style={{fontWeight:"500",marginLeft:"20px"}}>Legal</p>
+              <p style={{fontWeight:"500",marginLeft:"20px",color:"white"}}>Legal</p>
               <ul>
                 <li><a href="/privacy-policy" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white",fontSize:"14px" }}>Privacy Policy</a></li>
                 <li><a href="/terms-condition" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white",fontSize:"14px" }}>Terms & Conditions</a></li>
@@ -56,8 +56,8 @@ const Footer = () => {
        
         <div className="row">
           <div className="col-md-12">
-            <div className="footercontent" style={{marginLeft:"auto",marginRight:"auto",marginTop:"20px"}}>
-              <p style={{fontSize:"12px",textAlign:"center"}}>&copy; 2023 Your Company. All Rights Reserved.</p>
+            <div className="footercontent" style={{marginLeft:"auto",marginRight:"auto", marginTop:"20px",color:"red"}}>
+              <p style={{fontSize:"12px",textAlign:"center",color:"white"}}>&copy; 2023 Your Company. All Rights Reserved.</p>
             </div>
           </div>
         </div>

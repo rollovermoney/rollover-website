@@ -35,14 +35,10 @@ const Mobile = () => {
         <div className="col-md-2"></div>
         <div className="col-md-8 position-relative">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h6 className="invoicingText my-0" data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
+            <h6 className="invoicingText my-0" >
               Analytics Dashboard
             </h6>
-            <p className="invoicingPara my-5" data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
+            <p className="invoicingPara my-5">
               Easily track your invoice, payable and receivables and also, raise
               invoice using our invoicing software and get better discounting
               rates and faster approvals.
