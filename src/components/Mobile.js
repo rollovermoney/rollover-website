@@ -39,16 +39,14 @@ const Mobile = () => {
               Analytics Dashboard
             </h6>
             <p className="invoicingPara my-5">
-              Easily track your invoice, payable and receivables and also, raise
-              invoice using our invoicing software and get better discounting
-              rates and faster approvals.
+              Welcome to RolloverMoney, your one-stop solution for intelligent financial management. We understand the importance of maximizing your hard-earned money and making it work for you. With RolloverMoney, you can take control of your finances, plan for the future, and secure your financial well-being.
             </p>
 
             <div className="my-5 position-relative">
               <img className="macImg" src="/images/macdash.jpeg"></img>
             </div>
 
-            <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
+            {/* <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
               upto 50% less approval time
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-0" data-aos="fade-up">
@@ -66,7 +64,7 @@ const Mobile = () => {
             </div>
             <div className="MacPointsDiv3 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
               earn commission on referral
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-md-2"></div>
