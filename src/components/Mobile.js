@@ -4,13 +4,13 @@ import "./Mobile.css";
 import RangeField from "./RangeField";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import WaitList from "./waitlist";
 const Mobile = () => {
   const [price, setPrice] = useState(10000);
   const [returnRate, setReturnRate] = useState(10);
   const [period, setPeriod] = useState(5);
   const [estReturn, setEstReturn] = useState(0);
-
+  const [showPopup, setShowPopup] = useState(false);
   useEffect(() => {
     setEstReturn(price * (returnRate / 100));
     AOS.init();
@@ -41,30 +41,48 @@ const Mobile = () => {
             <p className="invoicingPara my-5">
               Welcome to RolloverMoney, your one-stop solution for intelligent financial management. We understand the importance of maximizing your hard-earned money and making it work for you. With RolloverMoney, you can take control of your finances, plan for the future, and secure your financial well-being.
             </p>
+            <button className=" bookbtn2 mb-5 mb-sm-0" onClick={() => setShowPopup(true)} data-aos="zoom-in">
+              Join Waitlist
+            </button>
+            {showPopup && (
+              <div className="popup">
+                <div className="popup-inner">
+                  <WaitList />
+                  <button
+                    onClick={() => setShowPopup(false)}
+                    className="closepopup"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+
 
             <div className="my-5 position-relative">
               <img className="macImg" src="/images/macdash.jpeg"></img>
             </div>
 
-            {/* <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
-              upto 50% less approval time
+
+            <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
+              Sync with your existing ERP
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-0" data-aos="fade-up">
-              better discounting rates on invoices
+              Invoicing made simple
             </div>
             <div className="d-flex d-sm-none div1macpoints mb-4" data-aos="fade-up">
-              earn commission on referral
+              Analytics that is easy to understand
             </div>
 
             <div className="MacPointsDiv1 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
-              upto 50% less approval time
+              Sync with your existing ERP
             </div>
             <div className="MacPointsDiv2 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
-              better discounting rates on invoices
+              Invoicing made simple
             </div>
             <div className="MacPointsDiv3 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
-              earn commission on referral
-            </div> */}
+              Analytics that is easy to understand
+            </div>
           </div>
         </div>
         <div className="col-md-2"></div>

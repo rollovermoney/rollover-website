@@ -26,9 +26,11 @@ const BannerSection = () => {
                 Get on a call
               </button>
 
-
             </div>
+            <h1 className="onlysaas">THE ONLY <span style={{ color: "#F4933C" }}>SaaS</span>  YOU NEED TO UNDERSTAND BUSINESS HEALTH</h1>
+
           </div>
+          
           <div className="col-md-4 p-3 order-1 order-md-2">
             <img className="bannerImage" src="/images/img1.png"></img>
           </div>

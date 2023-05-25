@@ -201,7 +201,6 @@
   right: 0%;
   margin-top: -100px;
   margin-right: -60px;
-  
 }
 .div1macpoints {
   background: #1c1a50;
@@ -219,9 +218,8 @@
   padding: 20px 30px;
   border-radius: 30px;
   left: 0%;
- margin-top: -100px;
- margin-left: -100px;
-  
+  margin-top: -100px;
+  margin-left: -100px;
 }
 .MacPointsDiv3 {
   background: #1c1a50;
@@ -298,4 +296,23 @@
   }
 }
 
-
+.bookbtn2 {
+  box-sizing: border-box;
+/* 
+  position: absolute; */
+  width: 278px;
+  height: 80px;
+  left: 675px;
+  top: 1580px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 30px */
+  background-color: white;
+  text-transform: capitalize;
+  
+  color: #15123E;
+  border: 1px solid #000000;
+}
