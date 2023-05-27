@@ -26,7 +26,7 @@ const CallBackSection = () => {
           <button className="btn callbtn" onClick={() => setShowPopup(true)} data-aos="zoom-in">
             Reach out to us
           </button>
-          {showPopup && (
+          {/* {showPopup && (
             <div className="popup">
               <div className="popup-inner">
                 <WaitList />
@@ -38,7 +38,7 @@ const CallBackSection = () => {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
         </div>
 
         <div className="d-flex justify-content-center">

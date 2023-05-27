@@ -45,7 +45,7 @@ const Mobile = () => {
             </p>
             <button
               className="bookbtn2 mb-5 mb-sm-0"
-              onClick={handleJoinWaitlist}
+             
               data-aos="zoom-in"
             >
               Join Waitlist
