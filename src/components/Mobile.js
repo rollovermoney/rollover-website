@@ -41,11 +41,15 @@ const Mobile = () => {
           <div className="d-flex justify-content-center align-items-center flex-column">
             <h6 className="invoicingText my-0">Analytics Dashboard</h6>
             <p className="invoicingPara my-5">
-              Welcome to RolloverMoney, your one-stop solution for intelligent financial management. We understand the importance of maximizing your hard-earned money and making it work for you. With RolloverMoney, you can take control of your finances, plan for the future, and secure your financial well-being.
+              Welcome to RolloverMoney, your one-stop solution for intelligent
+              financial management. We understand the importance of maximizing
+              your hard-earned money and making it work for you. With
+              RolloverMoney, you can take control of your finances, plan for the
+              future, and secure your financial well-being.
             </p>
             <button
               className="bookbtn2 mb-5 mb-sm-0"
-             
+              onClick={() => setShowPopup(true)}
               data-aos="zoom-in"
             >
               Join Waitlist
@@ -63,26 +67,51 @@ const Mobile = () => {
             )}
 
             <div className="my-5 position-relative">
-              <img className="macImg" src="/images/macdash.jpeg" alt="Mac Dashboard" />
+              <img
+                className="macImg"
+                src="/images/macdash.jpeg"
+                alt="Mac Dashboard"
+              />
             </div>
 
-            <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
+            <div
+              className="d-flex d-sm-none div1macpoints my-0"
+              data-aos="fade-up"
+            >
               Sync with your existing ERP
             </div>
-            <div className="d-flex d-sm-none div1macpoints mb-0" data-aos="fade-up">
+            <div
+              className="d-flex d-sm-none div1macpoints mb-0"
+              data-aos="fade-up"
+            >
               Invoicing made simple
             </div>
-            <div className="d-flex d-sm-none div1macpoints mb-4" data-aos="fade-up">
+            <div
+              className="d-flex d-sm-none div1macpoints mb-4"
+              data-aos="fade-up"
+            >
               Analytics that is easy to understand
             </div>
 
-            <div className="MacPointsDiv1 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
+            <div
+              className="MacPointsDiv1 d-none d-sm-flex"
+              data-aos="fade-up"
+              data-aos-offset="300"
+            >
               Sync with your existing ERP
             </div>
-            <div className="MacPointsDiv2 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
+            <div
+              className="MacPointsDiv2 d-none d-sm-flex"
+              data-aos="fade-up"
+              data-aos-offset="300"
+            >
               Invoicing made simple
             </div>
-            <div className="MacPointsDiv3 d-none d-sm-flex" data-aos="fade-up" data-aos-offset="300">
+            <div
+              className="MacPointsDiv3 d-none d-sm-flex"
+              data-aos="fade-up"
+              data-aos-offset="300"
+            >
               Analytics that is easy to understand
             </div>
           </div>

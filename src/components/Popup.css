@@ -7,7 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(8px);
+  z-index: 100;
+  /* backdrop-filter: blur(8px); */
 }
 
 .popup-inner {
@@ -36,14 +37,14 @@
 }
 
 .waitlist-input::placeholder {
-  color:#121139;
+  color: #121139;
 }
 
 .waitlist-btn {
   width: 100%;
   border: none;
   border-radius: 8px;
-  border:2px solid white;
+  border: 2px solid white;
   background-color: #121139;
   color: white;
   font-family: Poppins-Bold;
@@ -99,9 +100,6 @@
   }
 }
 
-
-
-
 .signup-counter {
   display: flex;
   flex-direction: column;
@@ -122,5 +120,5 @@
   margin: 10px 0 0;
   text-align: center;
   letter-spacing: 1px;
- font-family: "Poppins-Bold";
+  font-family: "Poppins-Bold";
 }
