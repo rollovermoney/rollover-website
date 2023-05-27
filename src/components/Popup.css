@@ -87,6 +87,17 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .popup-inner {
+    width: 90%;
+    height: 88vh; /* Use viewport height instead of percentage */
+  }
+
+  .closepopup {
+    top: 580px;
+    margin-left: -110px;
+  }
+}
 
 
 
