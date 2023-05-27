@@ -27,7 +27,7 @@ const BannerSection = () => {
               </button>
 
             </div>
-            <h1 className="onlysaas">THE ONLY <span style={{ color: "#F4933C" }}>SaaS</span>  YOU NEED TO UNDERSTAND BUSINESS HEALTH</h1>
+            {/* <h1 className="onlysaas">THE ONLY <span style={{ color: "#F4933C" }}>SaaS</span>  YOU NEED TO UNDERSTAND BUSINESS HEALTH</h1> */}
 
           </div>
           

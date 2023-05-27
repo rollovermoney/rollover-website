@@ -5,21 +5,25 @@ import RangeField from "./RangeField";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WaitList from "./waitlist";
+
 const Mobile = () => {
   const [price, setPrice] = useState(10000);
   const [returnRate, setReturnRate] = useState(10);
   const [period, setPeriod] = useState(5);
   const [estReturn, setEstReturn] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+
   useEffect(() => {
     setEstReturn(price * (returnRate / 100));
     AOS.init();
   }, [price, returnRate, estReturn]);
 
-  const url2 = "https://api.whatsapp.com/send?phone=9650830027";
-  const openlink = () => {
-    const url = "https://zeeg.me/rollover/30min";
-    window.open(url, "_blank");
+  const handleJoinWaitlist = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -35,34 +39,32 @@ const Mobile = () => {
         <div className="col-md-2"></div>
         <div className="col-md-8 position-relative">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h6 className="invoicingText my-0" >
-              Analytics Dashboard
-            </h6>
+            <h6 className="invoicingText my-0">Analytics Dashboard</h6>
             <p className="invoicingPara my-5">
               Welcome to RolloverMoney, your one-stop solution for intelligent financial management. We understand the importance of maximizing your hard-earned money and making it work for you. With RolloverMoney, you can take control of your finances, plan for the future, and secure your financial well-being.
             </p>
-            <button className=" bookbtn2 mb-5 mb-sm-0" onClick={() => setShowPopup(true)} data-aos="zoom-in">
+            <button
+              className="bookbtn2 mb-5 mb-sm-0"
+              onClick={handleJoinWaitlist}
+              data-aos="zoom-in"
+            >
               Join Waitlist
             </button>
+
             {showPopup && (
               <div className="popup">
                 <div className="popup-inner">
                   <WaitList />
-                  <button
-                    onClick={() => setShowPopup(false)}
-                    className="closepopup"
-                  >
+                  <button onClick={handleClosePopup} className="closepopup">
                     Close
                   </button>
                 </div>
               </div>
             )}
 
-
             <div className="my-5 position-relative">
-              <img className="macImg" src="/images/macdash.jpeg"></img>
+              <img className="macImg" src="/images/macdash.jpeg" alt="Mac Dashboard" />
             </div>
-
 
             <div className="d-flex d-sm-none div1macpoints my-0" data-aos="fade-up">
               Sync with your existing ERP

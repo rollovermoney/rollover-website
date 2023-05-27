@@ -17,21 +17,11 @@ const Footer = () => {
               <ul>
                 <li style={{ fontSize: "14px" }}>Invoicing Tool</li>
                 <li style={{ fontSize: "14px" }}>Analytics Dashboard</li>
-                <li style={{ fontSize: "14px" }}>Pricing Plans (Launching by July 23)</li>
+                {/* <li style={{ fontSize: "14px" }}>Pricing Plans (Launching by July 23)</li> */}
               </ul>
             </div>
           </div>
-          {/* <div className="col-md-3 col-sm-6">
-            <div className="footercontent">
-              <p style={{ fontWeight: "500", marginLeft: "20px", color: "white" }}>Support</p>
-              <ul>
-                <li style={{ fontSize: "14px" }}>Pricing Plan</li>
-                <li style={{ fontSize: "14px" }}>Documentation</li>
-                <li style={{ fontSize: "14px" }}>Guide</li>
-
-              </ul>
-            </div>
-          </div> */}
+        
           <div className="col-md-3 col-sm-6">
             <div className="footercontent">
               <p style={{ fontWeight: "500", marginLeft: "20px", color: "white" }}>Company</p>

@@ -39,8 +39,8 @@ const Home = () => {
     <>
       <BannerSection />
       <Mobile />
-      {/* <BusinessSteps /> */}
-      {/* <CallBackSection /> */}
+      <BusinessSteps />
+      <CallBackSection />
     </>
   );
 };

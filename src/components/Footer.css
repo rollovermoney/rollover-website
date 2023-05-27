@@ -30,9 +30,9 @@
   padding-left: 118px;
 }
 
-.footercontent {
+/* .footercontent {
   border-bottom: 1px solid #71777d;
-}
+} */
 
 @media only screen and (max-width: 450px) {
   .footercontent,
@@ -91,3 +91,4 @@
   height: 10px;
   margin: 10px;
 }
+
